@@ -3,21 +3,28 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
     color: #444d4d;
 }
 header {
     background-color: #128d8c;
+    box-shadow: -2px 0px 16px -7px #000;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    padding: 10px;
     
 }
-header .nav ul li {
-    
+
+header .nav{
+    align-items: end;
+}
+header .nav ul li {    
     list-style: none;
     margin-right: 20px;
-    display: flex;
     margin-top: 20px;
 }
 header .nav ul li a {
@@ -31,13 +38,14 @@ header .nav ul li a:hover{
     transition: all 0.3s ease;
 }
 header .logo {
-    margin-left: 50px;
+    margin-left: 30px;
     color: #ffffff;
 }
 
 header .nav ul {
     display: flex;
     flex-direction: row;
+    align-items: end;
     margin-right: 30px;
     
 }
@@ -45,32 +53,49 @@ header .nav ul {
 .sobre {
     display:flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 .sobre .texto {
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 600px;
     margin-top: 90px;
     margin-left: 100px;
-    text-align: justify;
+    text-align: center;
+
 }
-.sobre .texto h1 {
+.texto h1 {
+    color: #839e9e;
+    font-size: 30pt;
     margin-bottom: 20px;
 }
-.sobre .texto h3 {
+.sobre img{
+    width: 400px;
+}
+.sobre h3 {
+    color: rgb(18, 141, 140);
     margin-bottom: 10px;
+    background-color: rgba(18, 141, 140, .1);
+    font-size: 35pt;
+    padding: 20px;
+}
+.sobre .texto button{
+    font-size: 20pt;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #128d8c;
+    box-shadow: -2px 0px 16px -7px #000;
+    border: none;
+    border-radius: 10px;
 }
 aside {
     margin-right: 100px;
     margin-top: 90px;
-    color: black;
 }
 
 /* Especialidade */
 
 .especialidade h1 {
-    color: black;
+    color: #128d8c;
     text-align: center;
     margin-top: 100px;
     margin-bottom: 0px;
@@ -86,10 +111,10 @@ aside {
     height: 100px;
 }
 .especialidade .cursos .item p {
-    color: black;
+    color: #839e9e;
     font-weight: bold;
     font-family: sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
 }
 .especialidade .bloco {
@@ -106,11 +131,46 @@ hr {
     flex-direction: row;
     justify-content: space-between;
 }
-/* footer */
-footer {
-    color: black;
-    padding: 0 40px 0 40px;
-}
-footer .cop {
+
+/*..................................RODAPÉ..................................*/
+
+footer{
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 10px;
     text-align: center;
+    margin: 70px auto 0 auto;
+}
+ul{
+    list-style: none;
+}
+.rodape li{
+    padding: 5px;
+}
+.rodape li:hover{
+    color: whitesmoke;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+.rodape a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.rodape div:first-child{
+    text-align: left;
+	margin:10px;
+    border: 2px solid #128d8c;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.marca span{
+    font-size: 1.5rem;
+    text-align: start;
+}
+.rodape div:last-child{
+    color: #8FA5BB;
+    padding: 20px 0 0 0;
 }
